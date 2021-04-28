@@ -26,3 +26,4 @@ const typeDefs = apollo_server_express_1.gql `
   }
 `;
 exports.default = typeDefs;
+//# sourceMappingURL=typeDefs.js.map

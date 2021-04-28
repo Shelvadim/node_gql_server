@@ -7,8 +7,8 @@ import {
 } from 'apollo-server-express';
 import typeDefs from './typeDefs';
 import resolvers from './resolvers';
-import { applyMiddleware } from "graphql-middleware";
-import { log } from "./Logger";
+import { applyMiddleware } from 'graphql-middleware';
+import { log } from './logger';
 
 const app = express();
 const pubsub = new PubSub();

@@ -4,11 +4,11 @@ export const log = async (
   args: any,
   context: any,
   info: any
- ) => {
-  if(!parent) {
-   console.log("Start logging");
+) => {
+  if (!parent) {
+    console.log('Start logging');
   }
   const result = await resolver(parent, args, context, info);
-  console.log("Finished call to resolver");
+  console.log('Finished call to resolver');
   return result;
 };

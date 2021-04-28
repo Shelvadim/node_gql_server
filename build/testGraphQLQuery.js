@@ -9,13 +9,13 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.log = void 0;
-exports.log = (resolver, parent, args, context, info) => __awaiter(void 0, void 0, void 0, function* () {
-    if (!parent) {
-        console.log('Start logging');
-    }
-    const result = yield resolver(parent, args, context, info);
-    console.log('Finished call to resolver');
-    return result;
+exports.testGraphQLQuery = void 0;
+const graphql_1 = require("graphql");
+exports.testGraphQLQuery = ({ schema, source, variableValues, }) => __awaiter(void 0, void 0, void 0, function* () {
+    return graphql_1.graphql({
+        schema,
+        source,
+        variableValues,
+    });
 });
-//# sourceMappingURL=logger.js.map
+//# sourceMappingURL=testGraphQLQuery.js.map
